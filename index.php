@@ -1,4 +1,8 @@
 <?php
+
+// Header Location 
+header("Location: https://master--yuliusius.netlify.app/");
+
 if(isset($_GET['file'])){
     $dir="";
     $filename=$_GET['file'];
@@ -30,7 +34,7 @@ if(isset($_GET['file'])){
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Yulius - Resume</title>
+    <title>Yulius</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -110,14 +114,16 @@ if(isset($_GET['file'])){
 
                 <div class="row">
                     <div class="col-lg-5">
-                        <img src="assets/img/profile.jpeg" class="img-fluid" alt="">
+                        <img src="assets/img/profile.jpeg" class="img-fluid w-100" alt="">
                     </div>
                     <div class="col-lg-7 pt-4 pt-lg-0 content my-auto">
                         <h3>Undergraduated Student.</h3>
                         <p class="fst-italic text-justify" style="">
                             I am an undergraduated student of Informatics Engineering of Satya Wacana Christian
-                            University.I am very enthusiastic about software engineering and website development.
-                            currently i focus on web development using HTML, PHP, JS, Laravel, CodeIgniter
+                            University.
+                            I am very enthusiastic about software engineering and website development.
+                            Currently, I focus on web development using PHP, MySQL, JavaScript and Mobile Development
+                            using Kotlin.
                         </p>
                         <div class="row">
                             <div class="col-lg-12">
@@ -140,21 +146,16 @@ if(isset($_GET['file'])){
                                 </ul>
                                 <a href="index.php?file=CV_Yulius.pdf" target="_new"
                                     class="btn btn-outline-secondary px-4 py-2">
-                                    Download my
-                                    CV</a>
+                                    Download my CV</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section><!-- End About Section -->
-
-
         <!-- ======= Skills Section ======= -->
         <section id="skills" class="skills section-bg">
             <div class="container" data-aos="fade-up">
-
                 <div class="section-title">
                     <h2>Skills</h2>
                 </div>
@@ -172,7 +173,7 @@ if(isset($_GET['file'])){
                                 style="width:80px; height:auto; opacity:50%;" class="me-3" />
                         </div>
                         <div class="skills-icon">
-                            <img src="https://img.icons8.com/ios/500/000000/react-native--v1.png"
+                            <img src="https://img.icons8.com/ios/500/000000/android.png"
                                 style="width:80px; height:auto; opacity:50%;" class="me-3" />
                             <img src="https://img.icons8.com/ios/500/000000/laravel--v1.png"
                                 style="width:80px; height:auto; opacity:50%;" class="me-3" />
@@ -186,29 +187,26 @@ if(isset($_GET['file'])){
                     <div class="col-lg-6">
                         <h4>Others</h4>
                         <div class="progress">
+                            <span class="skill">Android Developer <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
                             <span class="skill">UI/UX Designer <i class="val">80%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                                     aria-valuemax="100"></div>
                             </div>
                         </div>
-
                         <div class="progress">
-                            <span class="skill">Time Management <i class="val">90%</i></span>
+                            <span class="skill">Web Developer <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                                     aria-valuemax="100"></div>
                             </div>
                         </div>
-
-                        <div class="progress">
-                            <span class="skill">tean management <i class="val">55%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
 
                     </div>
 
@@ -228,19 +226,6 @@ if(isset($_GET['file'])){
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <!-- <h3 class="resume-title">Sumary</h3>
-                        <div class="resume-item pb-0">
-                            <h4>Brandon Johnson</h4>
-                            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing
-                                    and developing user-centered digital/print marketing material from initial concept
-                                    to final, polished deliverable.</em></p>
-                            <ul>
-                                <li>Portland par 127,Orlando, FL</li>
-                                <li>(123) 456-7891</li>
-                                <li>alice.barkley@example.com</li>
-                            </ul>
-                        </div> -->
-
                         <h3 class="resume-title">Education</h3>
                         <div class="resume-item">
                             <h4>Satya wacana christian university</h4>
@@ -249,11 +234,28 @@ if(isset($_GET['file'])){
                             <p>GPA : 4.00</p>
                         </div>
                         <div class="resume-item">
+                            <h4>Bangkit Academy</h4>
+                            <h5>Feb 2022 - July 2022</h5>
+                            <p><em>Mobile Development Learning Path</em></p>
+                            <p>GPA : 4.00</p>
+                        </div>
+                        <div class="resume-item">
                             <h4>Kanisius Yos Soedarso Senior High School</h4>
-                            <h5>2016 - 2019</h5>
+                            <h5>July 2016 - July 2019</h5>
                             <p><em>Natural Science</em></p>
                         </div>
                         <h3 class="resume-title">Achievement</h3>
+                        <div class="resume-item">
+                            <h4>Google Certified Android Associate Developer</h4>
+                            <h5>2022 - 2025 </h5>
+                            <p>Achieved AAD Ceritification</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Graduated Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka With Distinction
+                            </h4>
+                            <h5>July 2022</h5>
+                            <p>Distinction Graduated at Bangkit Academy as Mobile Development Student.</p>
+                        </div>
                         <div class="resume-item">
                             <h4>Academic Achievement Scholarship at Satya Wacana Christian University</h4>
                             <h5>Aug 2020 - Present</h5>
@@ -261,23 +263,28 @@ if(isset($_GET['file'])){
                                 University</p>
                         </div>
                         <div class="resume-item">
-                            <h4>Dicoding Academy Pemrograman S.O.L.I.D</h4>
-                            <h5>Jul 2021</h5>
-                            <p>Currently receive Certificate of Pemrogramana S.O.L.I.D from Dicoding Academy</p>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Dicoding Academy Mulai Pemrograman Dengan C</h4>
-                            <h5>2016 - 2019</h5>
-                            <p>Currently receive Certificate of Pemrograman Dengan Bahasa C</p>
+                            <h4>Champion of GEMASTIK 2021</h4>
+                            <h5>Nov 2021</h5>
+                            <p>Champion of GEMASTIK (Pagelaran Mahasiswa Nasional Bidang Teknologi Informasi dan
+                                Komunikasi) at Satya Wacana Christian University</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <h3 class="resume-title">Professional Experience</h3>
                         <div class="resume-item">
+                            <h4>Business Integration Intern at PT.Sumber Alfaria Trijaya Tbk</h4>
+                            <h5>Sept 2022 - Present</h5>
+                            <p><em>Internship</em></p>
+                            <ul>
+                                <li>Build Web using Webix Framework</li>
+                                <li>Colaborate with Team</li>
+                                <li>Make Report Progress each week</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
                             <h4>Sayflash.id</h4>
                             <h5>2019 - Present</h5>
                             <p><em>Co Founder and Frontend Developer</em></p>
-
                             <ul>
                                 <li>Design User Interface and User Experience</li>
                                 <li>Managed up to 5 tasks at a given time while under pressure</li>
@@ -300,9 +307,10 @@ if(isset($_GET['file'])){
                         </div>
                         <div class="resume-item">
                             <h4>Assistant Lecture</h4>
-                            <h5>2020</h5>
+                            <h5>2020 - 2022</h5>
                             <ul>
                                 <li>Assistant Lecture of Descrete Mathematics</li>
+                                <li>Assistant Algorithm and Data Structure</li>
                             </ul>
                         </div>
                         <div class="resume-item">
@@ -311,6 +319,7 @@ if(isset($_GET['file'])){
                             <p><em>Event Division</em></p>
                             <ul>
                                 <li>Contact with Judges</li>
+                                <li>Make a Timeline</li>
                             </ul>
                         </div>
                     </div>
@@ -336,6 +345,7 @@ if(isset($_GET['file'])){
                             <li data-filter=".filter-app">App</li>
                             <li data-filter=".filter-card">Card</li>
                             <li data-filter=".filter-web">Web</li>
+                            <li data-filter=".filter-android">Android</li>
                         </ul>
                     </div>
                 </div>
@@ -500,7 +510,23 @@ if(isset($_GET['file'])){
 
                 <div class="row">
 
-                    <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-lg-4 col-md-6 col-xs-12 d-flex align-items-stretch" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div class="icon-box iconbox-green">
+                            <div class="icon">
+                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                        d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                                    </path>
+                                </svg>
+                                <i class="bi bi-code"></i>
+                            </div>
+                            <h4><a href="">Android Development</a></h4>
+                            <p>Develop a android for any category using Kotlin</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 d-flex align-items-stretch" data-aos="zoom-in"
+                        data-aos-delay="100">
                         <div class="icon-box iconbox-blue">
                             <div class="icon">
                                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -515,7 +541,7 @@ if(isset($_GET['file'])){
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                    <div class="col-lg-4 col-md-6 col-xs-12 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
                         data-aos-delay="200">
                         <div class="icon-box iconbox-orange ">
                             <div class="icon">
@@ -565,7 +591,7 @@ if(isset($_GET['file'])){
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
-                                <p>Pati, Central Java, Indonesia 59163</p>
+                                <p>Tangerang, Banten, Indonesia 15143</p>
                             </div>
 
                             <div class="email">
